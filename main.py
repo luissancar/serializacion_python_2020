@@ -53,6 +53,12 @@ def creaFicheroLista():
     del(fichero_lista_binario)
 
 def leeFicheroLista():
+    
+    #nota:
+    # en python 3 se abriría:
+    #
+     #with open("fichero","rb") as f:
+     #  lista = pickle.load(f)
     fichero_lista_binario = open("fichero_ciudades", "rb")
     lista=pickle.load(fichero_lista_binario)
     fichero_lista_binario.close()
@@ -70,6 +76,12 @@ def creaFicheroGuitarra():
     del(ficheroBinario)
 
 def leeFicheroGuitarra():
+     #nota:
+    # en python 3 se abriría:
+    #
+     #with open("fichero","rb") as f:
+     #  lista = pickle.load(f)
+    
     ficheroBinario = open("fichero_guitarras", "rb")
     lista=pickle.load(ficheroBinario)
     ficheroBinario.close()
